@@ -14,5 +14,3 @@ Frameworks applied:
 - STRIDE
 - Likelihood × Impact risk matrix
 - Defense-in-depth principles
-
-Add project overview
