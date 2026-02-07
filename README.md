@@ -1,2 +1,18 @@
-# iot-threat-model-stride
-Conducted structured STRIDE-based threat modeling for MQTT-based IoT architecture; identified critical authentication, encryption, and privilege escalation risks.
+# IoT Threat Modeling – STRIDE Analysis
+
+This repository contains a structured threat model for a simulated IoT critical infrastructure system.
+
+The system analyzed includes:
+- IoT sensors
+- MQTT broker
+- Cloud server
+- Web dashboard
+- Remote command controls
+
+Frameworks applied:
+- CIA Triad
+- STRIDE
+- Likelihood × Impact risk matrix
+- Defense-in-depth principles
+
+Add project overview
