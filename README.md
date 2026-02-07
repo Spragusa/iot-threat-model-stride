@@ -23,7 +23,7 @@ Demonstrate the ability to:
 
 ## 🧭 Architecture Overview
 
-![Simulated IoT Architecture](simulated-iot-architecture.png)
+![Simulated IoT Architecture](diagrams/simulated-iot-architecture.png)
 
 ## 🛠 Frameworks Used
 
