@@ -1,12 +1,12 @@
 # Grand Marina – IoT Threat Model (Simulated)
 
 ## 1) Executive Summary
-Hydroficient enables the Grand Marina hotel to monitor water usage in real time and remotely control water flow across key zones (guest rooms, kitchen, pool/spa). Because the system is internet-connected and managed via a cloud dashboard, it introduces security risks that could disrupt operations or cause real-world impact. If an attacker gained unauthorized access, they could shut off water to critical areas, manipulate readings to hide leaks, or disable visibility during an emergency.  
+HydroCo enables the Grand Marina hotel to monitor water usage in real time and remotely control water flow across key zones (guest rooms, kitchen, pool/spa). Because the system is internet-connected and managed via a cloud dashboard, it introduces security risks that could disrupt operations or cause real-world impact. If an attacker gained unauthorized access, they could shut off water to critical areas, manipulate readings to hide leaks, or disable visibility during an emergency.  
 This threat model documents the system, identifies the most likely/high-impact threats using STRIDE, and recommends practical mitigations to reduce risk.
 
 ## 2) System Overview
 **Environment (simulated):**
-- 3 HYDROLOGIC devices (Device 01: Main Building, Device 02: Pool/Spa, Device 03: Kitchen/Laundry)
+- 3 Edge IoT Device devices (Device 01: Main Building, Device 02: Pool/Spa, Device 03: Kitchen/Laundry)
 - Devices publish sensor readings (pressure, flow, gate positions) to a cloud system via MQTT
 - Cloud API processes/stores data and serves a web dashboard
 - Operators use the dashboard to view status and send remote commands (including emergency shutoff)
@@ -25,7 +25,7 @@ This threat model documents the system, identifies the most likely/high-impact t
 
 ## 4) Data Flows (Text)
 **Sensor path:**  
-HYDROLOGIC device → publishes MQTT topic (e.g., `.../device-01/pressure/upstream`) → broker → cloud ingestion/API → database → dashboard subscription/display.
+Edge IoT Device device → publishes MQTT topic (e.g., `.../device-01/pressure/upstream`) → broker → cloud ingestion/API → database → dashboard subscription/display.
 
 **Command path:**  
 Operator dashboard action → command message created → MQTT topic (e.g., `.../commands/device-01/shutoff`) → broker → device receives → actuator executes.
