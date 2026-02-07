@@ -35,3 +35,5 @@ Demonstrate the ability to:
 ---
 
 This project is part of a cybersecurity externship focused on IoT security and cloud-based critical infrastructure systems.
+
+> ⚠️ This project models a fictional IoT deployment for educational and portfolio purposes only. No real infrastructure or client data is included.
