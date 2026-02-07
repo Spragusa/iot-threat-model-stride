@@ -21,6 +21,10 @@ Demonstrate the ability to:
 - Prioritize risk using Likelihood × Impact matrix
 - Recommend practical, layered mitigations
 
+## 🧭 Architecture Overview
+
+![Simulated IoT Architecture](simulated-iot-architecture.png)
+
 ## 🛠 Frameworks Used
 
 - CIA Triad
